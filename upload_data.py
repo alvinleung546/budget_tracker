@@ -16,7 +16,7 @@ def upload_file(request):
     try:
         if filename.endswith('.csv'):
             df = pd.read_csv(file)
-            return save_file(df, filename)
+            return create_transactions_from_csv(df)
         
         else:
             return jsonify({"error": "Unsupported file type"}), 400
