@@ -19,7 +19,7 @@ def init_db():
                 amount REAL,
                 category TEXT,
                 predicted_category TEXT,
-                predicted_confience REAL,
+                predicted_confience REAL
             )
         ''')
         conn.commit()
@@ -29,11 +29,11 @@ def home():
     return render_template('app.html')
 
 @app.route('/app/upload')
-def home():
+def app_upload():
     return render_template('upload.html')
 
 @app.route("/api/upload", methods=["POST"])
-def upload():
+def api_upload():
     if request.method == 'POST':
         return upload_data.upload_file(request)
 
