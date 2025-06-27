@@ -1,0 +1,37 @@
+html {-webkit-text-size-adjust: none;}
+html { overflow-x:hidden; }
+
+body {
+  margin: 25px;
+  background-color: rgb(240,240,240);
+  color: #040F0F;
+  font-family: arial, sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 5px;
+  color: #040F0F;
+}
+
+.primary-button {  
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    background-color: #C9FBFF;
+    color: #040F0F;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {  
+    background-color: #85BDBF;
+}
+
+p {  
+    font-size: 1.2rem;
+    color: #040F0F;
+}
