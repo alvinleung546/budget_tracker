@@ -13,7 +13,7 @@ def init_db():
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS transactions (
                 id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
-                user_id INTEGER,
+                user_id INTEGER DEFAULT 1,
                 transaction_date TEXT,
                 description TEXT,
                 amount REAL,
